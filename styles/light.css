@@ -9,8 +9,25 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --header-bg: url("../images/cover-image-light.png");
+  --title-color: rgb(255, 194, 230);
+  --accent-color: rgb(255, 141, 203);
+  --header-color: rgb(53, 52, 48);
+  --content-color: rgb(53, 52, 48);
 }
 
-.theme-light .page {
+@media (prefers-color-scheme: light) {
+  :root {
+    --header-bg: url("../images/cover-image-light.png");
+    --title-color: rgb(255, 194, 230);
+    --accent-color: rgb(255, 141, 203);
+    --accent-color-hover : rgba(50, 49, 45, 0.4);
+    --header-color: rgb(53, 52, 48);
+    --content-color: rgb(53, 52, 48);
+  }
+}
+
+.theme-light .rec__inscr {
   /* Вам также нужно будет написать ряд подобных селекторов */
+  display: none;
 }
