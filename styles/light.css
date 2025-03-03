@@ -11,7 +11,9 @@
   */
   --header-bg: url("../images/cover-image-light.png");
   --title-color: rgb(255, 194, 230);
-  --accent-color: rgb(255, 141, 203);
+  --bg-color: rgb(255, 141, 203);
+  --accent-color: rgb(53, 52, 48);
+  --accent-color-hover : rgba(50, 49, 45, 0.4);
   --header-color: rgb(53, 52, 48);
   --content-color: rgb(53, 52, 48);
 }
@@ -20,7 +22,8 @@
   :root {
     --header-bg: url("../images/cover-image-light.png");
     --title-color: rgb(255, 194, 230);
-    --accent-color: rgb(255, 141, 203);
+    --bg-color: rgb(255, 141, 203);
+    --accent-color: rgb(53, 52, 48);
     --accent-color-hover : rgba(50, 49, 45, 0.4);
     --header-color: rgb(53, 52, 48);
     --content-color: rgb(53, 52, 48);

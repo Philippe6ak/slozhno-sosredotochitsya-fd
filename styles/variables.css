@@ -4,13 +4,14 @@
 */
 
 :root {
-  --header-bg: url("../images/cover-image-dark.png");
-  --title-color: rgb(219, 0, 255);
-  --accent-color: rgb(255, 0, 112);
-  --accent-color-hover : rgba(255, 0, 112, 0.4);
-  --header-color: rgb(0, 0, 40);
-  --content-color: rgb(241, 178, 206);
   --font-family: IBM Plex Mono;
   --bold-font: 700;
   --regular-font: 400;
+  --header-bg: url("../images/cover-image-dark.png");
+  --title-color: rgb(219, 0, 255);
+  --accent-color: rgb(255, 0, 112);
+  --bg-color: rgb(255, 0, 112);
+  --accent-color-hover : rgba(255, 0, 112, 0.4);
+  --header-color: rgb(0, 0, 40);
+  --content-color: rgb(241, 178, 206);
 }

@@ -66,7 +66,7 @@
   top: 50%;
   right: -18px;
   transform: translateY(-50%);
-  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--shadow-color);
   width: 9px;
   height: 9px;
   background-color: var(--accent-color);
@@ -113,12 +113,12 @@
   text-align: start;
   place-self: center start;
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--bg-color);
   display: block;
 }
 
 .text-decor {
-  background-color: var(--accent-color);
+  background-color: var(--bg-color);
 }
 
 .header__text-container {
@@ -191,7 +191,7 @@ h4.content-text {
 
 .text-link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--bg-color);
 }
 
 .odd {
