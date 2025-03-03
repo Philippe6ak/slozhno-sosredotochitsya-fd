@@ -6,6 +6,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 /* header section*/
@@ -169,7 +170,7 @@
   font-size: 18px;
   line-height: 23.4px;
   color: var(--accent-color);
-  height: fit-content;
+  height: min-content;
 }
 
 h3.content-title {
@@ -283,7 +284,7 @@ h4.content-text {
 
   .header::after { /* top right corner rectangle*/
     top: 20px;
-    right: 10px;
+    right: 20px;
   }
   
   .header::before { /* bottom left corner rectangle*/
@@ -292,7 +293,7 @@ h4.content-text {
   }
 
   .rec__inscr {
-    right: 38px;
+    right: 48px;
     top: 20px;
   }
 
@@ -313,12 +314,14 @@ h4.content-text {
   .content-main__section {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(auto-fit, 1fr);
-    gap: 20px;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    row-gap: 20px;
+    column-gap: 10px;
   }
 
   .content-title {
     grid-row: 1 / -1;
+    padding-right: 3px;
   }
 
   .content-sub__section {
@@ -341,6 +344,10 @@ h4.content-text {
     grid-column: 1 / 3;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
+  }
+
+  .odd {
+    margin-bottom: 10px;
   }
 
   .galery-section {
@@ -388,7 +395,7 @@ h4.content-text {
 
   .footer::after {
     top : 20px;
-    right: 10px;
+    right: 20px;
   }
 
   .footer::before {
@@ -396,6 +403,8 @@ h4.content-text {
     left: 20px;
   }
 }
+
+/* laptop version */
 
 @media (width >= 1024px) {
   .header__theme-menu {
