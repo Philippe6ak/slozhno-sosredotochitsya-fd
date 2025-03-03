@@ -194,6 +194,10 @@ h4.content-text {
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
+.odd {
+  margin-bottom: 10px;
+}
+
 /* galery section */
 
 .galery-section {
@@ -316,7 +320,6 @@ h4.content-text {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(auto-fill, 1fr);
     row-gap: 20px;
-    column-gap: 10px;
   }
 
   .content-title {
@@ -344,10 +347,6 @@ h4.content-text {
     grid-column: 1 / 3;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-  }
-
-  .odd {
-    margin-bottom: 10px;
   }
 
   .galery-section {
@@ -422,6 +421,10 @@ h4.content-text {
 
   .header__text-container {
     margin-block-start: 50px;
+  }
+
+  .content-main__section {
+    column-gap: 10px;
   }
 
   main .content-main__section:nth-child(2) {
