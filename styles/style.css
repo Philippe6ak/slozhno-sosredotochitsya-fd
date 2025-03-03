@@ -431,6 +431,7 @@ h4.content-text {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr;
+    column-gap: 20px;
   }
 
   main .content-main__section:nth-child(2) .content-title {
