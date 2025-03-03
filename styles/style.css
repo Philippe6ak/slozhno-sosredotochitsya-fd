@@ -17,6 +17,7 @@
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
   height: 100vh;
+  margin-block-end: 40px;
 }
 
 .header::after { /* top right corner rectangle*/
@@ -142,10 +143,11 @@
 
 /* main part */
 
-main {
+.main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 50px;
+  margin-block-end: 40px;
 }
 
 .content-main__section {
@@ -210,7 +212,7 @@ h4.content-text {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
-  min-height: 668px;
+  height: 100vh;
 }
 
 .footer .header__title {
@@ -275,6 +277,10 @@ h4.content-text {
     padding-left: 0;  /* Стили body при ширине меньше 720px */
   }
 
+  .header {
+    margin-block-end: 60px;
+  }
+
   .header::after { /* top right corner rectangle*/
     top: 20px;
     right: 10px;
@@ -301,6 +307,12 @@ h4.content-text {
 
   .header__text-container {
     margin-inline-end: 10px;
+  }
+
+  .main {
+    margin-block-end: 60px;
+    padding: 0 10px 0 20px;
+    gap: 80px;
   }
 
   .content-main__section {
@@ -336,16 +348,15 @@ h4.content-text {
     grid-template-rows: auto 1fr;
   }
 
-
   .galery-section {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: fit-content 1fr 1fr 1fr;
     gap: 20px;
   }
 
-  .image-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
+  .galery-section .content-title {
+    grid-row: 1 / auto;
+    grid-column: 1 / -1;
   }
 
   .galery-image {
@@ -357,27 +368,37 @@ h4.content-text {
 
   .galery-image[src="./images/sunset.png"] {
     grid-column: 1 / span 2;
-    grid-row: 1 / auto;
+    grid-row: 2 / auto;
   }
 
   .galery-image[src="/images/ice-cream.png"] {
     grid-column: 3 / auto;
-    grid-row: 1/ span 2;
+    grid-row: 2 / span 2;
   }
 
   .galery-image[src="/images/tape.png"] {
     grid-column: 1 / auto;
-    grid-row: 2 / span 2;
+    grid-row: 3 / span 2;
   }
 
   .galery-image[src="/images/books.png"] {
     grid-column: 2 / auto;
-    grid-row: 2 / auto;
+    grid-row: 3 / auto;
   }
 
   .galery-image[src="/images/street.png"] {
     grid-column: 2 /span 2;
-    grid-row:  3 / auto;
+    grid-row:  4 / auto;
+  }
+
+  .footer::after {
+    top : 20px;
+    right: 10px;
+  }
+
+  .footer::before {
+    bottom: 20px;
+    left: 20px;
   }
 }
 
