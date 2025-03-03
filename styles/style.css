@@ -6,7 +6,6 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding: 0px 10px;
 }
 
 /* header section*/
@@ -17,6 +16,7 @@
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
   height: 100vh;
+  padding: 0 10px;
   margin-block-end: 40px;
 }
 
@@ -26,7 +26,7 @@
   width: 25px;
   height: 25px;
   top: 10px;
-  right: 0px;
+  right: 10px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
 }
@@ -37,7 +37,7 @@
   width: 25px;
   height: 25px;
   bottom: 10px;
-  left: 0px;
+  left: 10px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
 }
@@ -55,7 +55,7 @@
   width: min-content;
   height: min-content;
   justify-self: end;
-  right: 28px;
+  right: 38px;
   top: 10px;
 }
 
@@ -148,6 +148,7 @@
   grid-template-columns: 1fr;
   gap: 50px;
   margin-block-end: 40px;
+  padding: 0 10px;
 }
 
 .content-main__section {
@@ -213,6 +214,7 @@ h4.content-text {
   grid-template-columns: 1fr;
   place-items: center;
   height: 100vh;
+  padding: 0 10px;
 }
 
 .footer .header__title {
@@ -225,7 +227,7 @@ h4.content-text {
   width: 25px;
   height: 25px;
   top: 10px;
-  right: 0px;
+  right: 10px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
 }
@@ -236,7 +238,7 @@ h4.content-text {
   width: 25px;
   height: 25px;
   bottom: 10px;
-  left: 0px;
+  left: 10px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
 }
@@ -273,12 +275,10 @@ h4.content-text {
 /* tablet version */
 
 @media (width >= 768px) {
-  .page {
-    padding-left: 0;  /* Стили body при ширине меньше 720px */
-  }
-
   .header {
     margin-block-end: 60px;
+    padding-left: 0;
+    padding-right: 20px;
   }
 
   .header::after { /* top right corner rectangle*/
@@ -298,20 +298,15 @@ h4.content-text {
 
   .header__theme-menu {
     margin-block-start: 192px;
-    margin-inline-end: 10px;
   }
 
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
-  .header__text-container {
-    margin-inline-end: 10px;
-  }
-
   .main {
     margin-block-end: 60px;
-    padding: 0 10px 0 20px;
+    padding: 0 20px;
     gap: 80px;
   }
 
@@ -333,7 +328,7 @@ h4.content-text {
   main .content-main__section:nth-child(2) {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto 1fr;
   }
 
   main .content-main__section:nth-child(2) .content-title {
