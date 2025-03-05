@@ -27,6 +27,8 @@
     --accent-color-hover : rgba(50, 49, 45, 0.4);
     --header-color: rgb(53, 52, 48);
     --content-color: rgb(53, 52, 48);
+
+    --still-bg: rgb(255, 241, 247);
   }
 }
 
