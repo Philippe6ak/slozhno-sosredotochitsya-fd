@@ -16,6 +16,7 @@
   --accent-color-hover : rgba(50, 49, 45, 0.4);
   --header-color: rgb(53, 52, 48);
   --content-color: rgb(53, 52, 48);
+  --still-bg: rgb(255, 241, 247);
 }
 
 @media (prefers-color-scheme: light) {
@@ -27,12 +28,14 @@
     --accent-color-hover : rgba(50, 49, 45, 0.4);
     --header-color: rgb(53, 52, 48);
     --content-color: rgb(53, 52, 48);
-
     --still-bg: rgb(255, 241, 247);
   }
-}
 
-.theme-light .rec__inscr {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  display: none;
+  .rec__inscr {
+    display: none;
+  }
+
+  .theme-dark .rec__inscr {
+    display: inline-block;
+  }
 }
